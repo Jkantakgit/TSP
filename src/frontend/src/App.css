@@ -1,0 +1,135 @@
+/* Container styling */
+.container {
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #007bff;
+}
+
+/* TSP map wrapper */
+.tsp-wrapper {
+  width: 80vw;
+  height: 50vh;
+  border: 4px dashed #888;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  user-select: none;
+  cursor: crosshair;
+  background: #f9f9f9;
+  box-shadow: 0 0 10px 5px #0003;
+  transition: all 0.3s ease;
+}
+
+.tsp-wrapper:hover {
+  border-color: #555;
+}
+
+/* Cities (nodes) */
+.city {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ff6f61;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0 0 6px 2px #ff6f61cc;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.city:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+/* Button styling */
+.tsp-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #0003;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.tsp-button:hover {
+  background: #0056b3;
+}
+
+/* Route lines */
+.tsp-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.tsp-wrapper svg line {
+  stroke: #007bff;
+  stroke-width: 3;
+  stroke-dasharray: 5, 5;
+  transition: all 0.3s ease;
+}
+
+/* Route info */
+.route-info {
+  margin-top: 20px;
+  padding: 20px;
+  background: #edf2ff;
+  border-radius: 20px;
+}
+
+.route-info h2 {
+  color: #007bff;
+}
+
+.route-info ol {
+  padding-left: 20px;
+}
+
+.route-info ol li strong {
+  color: #007bff;
+}
+
+/* Error messages */
+.error-message {
+  color: #d32f2f;
+}
+
+/* Loading spinner or state */
+.loading {
+  color: #007bff;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #dc3545;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px #0003;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 10px;  /* <- this adds some space between the two buttons */
+}
+
+.reset-button:hover {
+  background: #c82333;
+}

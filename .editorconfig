@@ -1,0 +1,28 @@
+root = true
+
+# Default settings for all files
+[*]
+indent_style = space
+indent_size = 2
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Go files typically use tabs
+[*.go]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# TypeScript files (TS) should use spaces
+[*.tsx]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Markdown files should retain trailing whitespace (for manual line breaks)
+[*.md]
+trim_trailing_whitespace = false
